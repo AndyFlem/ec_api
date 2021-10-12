@@ -73,10 +73,14 @@ GEM
     mini_portile2 (2.4.0)
     minitest (5.14.1)
     nio4r (2.5.2)
+    nokogiri (1.10.9)
+      mini_portile2 (~> 2.4.0)
     nokogiri (1.10.9-x86-mingw32)
       mini_portile2 (~> 2.4.0)
+    pg (0.21.0)
     pg (0.21.0-x86-mingw32)
-    puma (3.12.6)
+    puma (4.3.9)
+      nio4r (~> 2.0)
     rack (2.2.3)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
@@ -127,6 +131,7 @@ GEM
 
 PLATFORMS
   x86-mingw32
+  x86_64-linux
 
 DEPENDENCIES
   active_model_serializers
@@ -134,7 +139,7 @@ DEPENDENCIES
   byebug
   dotenv-rails
   pg (~> 0.18)
-  puma (~> 3.7)
+  puma (~> 4.3)
   rails (~> 5.1.3)
   tzinfo-data
 
